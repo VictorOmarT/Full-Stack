@@ -79,7 +79,7 @@ function howOld(age,year){
   }
 }
 
-  console.log(howOld(29,2019)) */
+  console.log(howOld(29,2019)) 
 
 
   // Write your code below
@@ -97,13 +97,50 @@ for(let b = 0; b < bobsFollowers.length; b++){
   }
 }
 
-console.log(mutualFollowers)
+console.log(mutualFollowers) 
 
 
 
+let total = 0;
+for (let n = 9 ; n >= 6  ; n -- ) {
+  total *= 10;
+  total += n;  
+  //console.log(total)
+}
+console.log(total)
+for (let a = 0; a <= 3; a += 1) {
+  for (let b = 16; b > 1; b /= 2) {
+    console.log(`** a is ${a}, b is ${b}`);
+  }
+}
+const txt = 'remittance';
+ 
+let res = '';
+for (let n = 4 ; n > 0 ; n -- ) {
+  res += txt[n];
+}
+console.log(res);
 
 
-  
+titles = ['The Philosopher\'s Stone', 'The Chamber of Secrets', 'The Prisoner of Azkaban', 'The Goblet of Fire', 'The Order of the Phoenix', 'The Half-Blood Prince', 'The Deathly Hallows'];
+let i = 0
+for(let con = 0 ; i <= titles.length; i += 1 ){
+  con ++
+  console.log(`${con}. ${titles[i]}`)
+}*/
+
+for(let i = 0; i<=10; i+=2){
+  console.log(i)
+}
+x=0
+i=0
+console.log( " ")
+do{
+  x = x + i;
+  console.log()
+  console.log(x)
+  i++
+}while(i < 5)
   
   
   
