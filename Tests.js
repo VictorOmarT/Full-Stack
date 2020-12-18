@@ -127,7 +127,7 @@ let i = 0
 for(let con = 0 ; i <= titles.length; i += 1 ){
   con ++
   console.log(`${con}. ${titles[i]}`)
-}*/
+}
 
 for(let i = 0; i<=10; i+=2){
   console.log(i)
@@ -141,19 +141,67 @@ do{
   console.log(x)
   i++
 }while(i < 5)
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+let spaceship = {
+  homePlanet : 'Earth',
+  color : 'red'
+};
+let tryReassignment = obj => {
+  obj = {
+    identified : false, 
+    'transport type' : 'flying'
+  }
+  console.log(obj) // Prints {'identified': false, 'transport type': 'flying'}
+ 
+};
+tryReassignment(spaceship) // The attempt at reassignment does not work.
+spaceship // Still returns {homePlanet : 'Earth', color : 'red'};
+ 
+/*spaceship = {
+  identified : false, 
+  'transport type': 'flying'
+}; // Regular reassignment still works.
+spaceship
+spaceship.motor = ["tracalosa"]  
+spaceship.model = [{ford:["model 2", "contibyua"], comida: 9}]
+
+console.log(spaceship)
+
+
+let spaceship = {
+  crew: {
+    captain: { 
+      name: 'Lily', 
+      degree: 'Computer Engineering', 
+      cheerTeam() { console.log('You got this!') } 
+    },
+    'chief officer': { 
+      name: 'Dan', 
+      degree: 'Aerospace Engineering', 
+      agree() { console.log('I agree, captain!') } 
+    },
+    medic: { 
+      name: 'Clementine', 
+      degree: 'Physics', 
+      announce() { console.log(`Jets on!`) } },
+    translator: {
+      name: 'Shauna', 
+      degree: 'Conservation Science', 
+      powerFuel() { console.log('The tank is full!') } 
+    }
+  }
+}; 
+ 
+// for...in
+for (let popo in spaceship.crew) {
+  console.log(`${popo}: ${spaceship.crew[popo].name} degree: ${spaceship.crew[popo].degree}`);
+
+}*/
+let mobile = {
+  brand: 'Samsung',
+  model: 'Galaxy Note 9'
+};
+ 
+for (let key in mobile) {
+  console.log(`${key}: ${mobile[key]}`);
+}
