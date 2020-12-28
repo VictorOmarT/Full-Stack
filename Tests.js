@@ -196,7 +196,7 @@ let spaceship = {
 for (let popo in spaceship.crew) {
   console.log(`${popo}: ${spaceship.crew[popo].name} degree: ${spaceship.crew[popo].degree}`);
 
-}*/
+}
 let mobile = {
   brand: 'Samsung',
   model: 'Galaxy Note 9'
@@ -205,3 +205,42 @@ let mobile = {
 for (let key in mobile) {
   console.log(`${key}: ${mobile[key]}`);
 }
+
+function frasePalindromo(fraseUser){
+  fraseUser=fraseUser.toLowerCase().replace(/\s/g,"");
+
+  fraserReverse=fraseUser.split("").reverse().toString();
+
+  for (var i = 0; i < ((fraserReverse.length)-1); i++) {
+    fraserReverse=fraserReverse.replace(",","");
+  };
+
+  if(fraseUser==fraserReverse){
+    // Si el resultado es positivo
+    return true;
+  }
+  else{
+    // Si el resultado es negativo
+    return false;
+  }
+}
+// Llamo a la función comparación con el parámetro del user
+console.log(frasePalindromo("Aman a Panama"));*/
+function palindrome(str) {
+  // Good luck!
+  
+  var rcase = str.replace(/[\W_]/g, "");
+  var lcase = rcase.toLowerCase(); 
+  var revcase = lcase.split("").reverse().join(""); 
+  
+  if (lcase == revcase) { 
+    return true;
+  } else if (lcase !== revcase) { 
+    return false;
+  }
+  
+}
+
+console.log(palindrome("oso"))
+
+console.log("Hello"[1])
