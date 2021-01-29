@@ -225,7 +225,7 @@ function frasePalindromo(fraseUser){
   }
 }
 // Llamo a la función comparación con el parámetro del user
-console.log(frasePalindromo("Aman a Panama"));*/
+console.log(frasePalindromo("Aman a Panama"));
 function palindrome(str) {
   // Good luck!
   
@@ -244,3 +244,19 @@ function palindrome(str) {
 console.log(palindrome("oso"))
 
 console.log("Hello"[1])
+
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+let words = ['oak', 'sycamore', 'birch', 'sequoia'];
+ 
+for (let w = 0; w < words.length; w += 1) {
+  let word = words[w];
+  let count = 0;
+  for (let v = 0; v < vowels.length; v += 1) {
+    let vowel = vowels[v];
+    if (word.includes(vowel)) {
+      count += 1;
+    }
+  }
+  console.log(`"${word}" contains ${count} vowels.`);
+}*/
+
